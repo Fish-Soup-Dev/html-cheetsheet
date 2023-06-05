@@ -1,0 +1,19 @@
+.html-hint-button {
+    @apply 
+        bg-zinc-700 
+        hover:bg-zinc-600
+        rounded-md
+        shadow-md 
+        hover:shadow-lg 
+        w-72 h-14 m-2
+        hover:translate-y-0.5
+        transition-all ease-in-out;
+}
+
+.html-hint-title {
+    @apply text-zinc-100 font-bold text-lg text-left px-2;
+}
+
+.html-hint-discription {
+    @apply text-zinc-400 italic text-left px-2;
+}

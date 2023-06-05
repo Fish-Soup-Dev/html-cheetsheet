@@ -1,0 +1,35 @@
+.modal {
+    @apply 
+        fixed 
+        top-0 left-0 right-0 bottom-0
+        opacity-0
+        pointer-events-none
+        transition-all
+        ease-in-out
+        backdrop-blur-sm
+        flex items-center justify-center;
+}
+
+.modal.show {
+    @apply opacity-100 pointer-events-auto;
+}
+
+.modal-content {
+    @apply sm:w-2/3 w-3/4 h-max bg-zinc-700 bg-opacity-90 rounded-lg shadow-lg;
+}
+
+.modal-title {
+    @apply text-zinc-100 font-bold text-3xl;
+}
+
+.modal-body {
+    @apply p-3;
+}
+
+.modal-header {
+    @apply p-3 flex justify-between shadow-md;
+}
+
+.modal-button {
+    @apply bg-zinc-800 text-zinc-100 rounded-lg px-2;
+}
